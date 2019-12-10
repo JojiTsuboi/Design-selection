@@ -1,0 +1,14 @@
+
+/* スライダーのサイズと配置を指定しています。 */
+.your-class{
+    width: 700px;
+    height: 250px;
+
+    margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+
+/* スライダーで表示する画像のサイズを指定しています。 */
+.your-class div img{
+    width: 200px;
+    height: auto;
+}

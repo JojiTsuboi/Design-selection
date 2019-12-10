@@ -1,0 +1,348 @@
+/*-----------------------------------------------------------*/
+header {
+  text-align: right;/*右寄せ*/
+  padding: 10px;/*上下左右余白*/
+  background-image: url(../static/tile.jpg);
+  height: 300px;/*高さ*/
+  background-size: cover;/*縦横比保持*/
+  background-position: 50% 50%;
+  margin-bottom: 0px;
+}
+/*-----------------------------------------------------------*/
+.submit{
+    text-align: right;
+}
+
+.btn {
+	position: relative;
+	width: 160px;
+	padding: 0.8em;
+	text-decoration: none;
+	color: #1B1B1B;
+	background: #fff;
+    border-radius: 30px;
+	border:1px solid #1B1B1B;
+	 -webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.btn:hover {
+	 cursor: pointer;
+	 text-decoration: none;
+	-webkit-animation: btn 0.5s both;
+	-moz-animation: btn 0.5s both;
+	        animation: btn 0.5s both;
+}
+@-webkit-keyframes btn {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+@-moz-keyframes btn {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+@keyframes btn {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+/*-----------------------------------------------------------*/
+
+.selectradio {
+    list-style: none;
+    text-align: left;
+}
+.selectradio .selectradio-item {
+    margin-right: auto;
+    margin-left: auto;
+}
+.selectradio input[type="radio"] {
+    display: none;
+}
+.selectradio input[type="radio"]:checked + label {  /*選択時*/
+    background: #ff9800ad;  /*背景*/
+    color: #000000; /*文字*/
+    border: 2px solid #733d39;  /*枠線*/
+}
+.selectradio .selectradio-label {   /*通常時*/
+    display: block;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    padding: 0 5px;
+    cursor: pointer;
+    color: #000000;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background: #e6e6e6bf;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+.selectradio .selectradio-item {
+  display: inline-block;
+}
+.selectradio .selectradio-label {
+  display: inline-block;
+  width: 100px;
+}
+.selectradio .sample {
+    width: 100px;
+    height: 100px;
+}
+/*-----------------------------------------------------------*/
+
+.gazou {
+    margin-top: 50px;
+}
+
+.text {
+  display: none;
+}
+
+/* スライダーのサイズと配置を指定しています。 */
+.text01 {
+  display: block;
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+/* スライダーで表示する画像のサイズを指定しています。 */
+.text01 div img{
+    width: 200px;
+    height: auto;
+}
+.text02 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text02 div img{
+    width: 200px;
+    height: auto;
+}
+.text03 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text03 div img{
+    width: 200px;
+    height: auto;
+}
+.text04 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text04 div img{
+    width: 200px;
+    height: auto;
+}
+.text05 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text05 div img{
+    width: 200px;
+    height: auto;
+}
+.text06 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text06 div img{
+    width: 200px;
+    height: auto;
+}
+.text07 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text07 div img{
+    width: 200px;
+    height: auto;
+}
+.text08 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text08 div img{
+    width: 200px;
+    height: auto;
+}
+.text09 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text09 div img{
+    width: 200px;
+    height: auto;
+}
+.text10 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text10 div img{
+    width: 200px;
+    height: auto;
+}
+.text11 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text11 div img{
+    width: 200px;
+    height: auto;
+}
+.text12 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text12 div img{
+    width: 200px;
+    height: auto;
+}
+.text13 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text13 div img{
+    width: 200px;
+    height: auto;
+}
+.text14 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text14 div img{
+    width: 200px;
+    height: auto;
+}
+.text15 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text15 div img{
+    width: 200px;
+    height: auto;
+}
+.text16 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text16 div img{
+    width: 200px;
+    height: auto;
+}
+.text17 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text17 div img{
+    width: 200px;
+    height: auto;
+}
+.text18 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text18 div img{
+    width: 200px;
+    height: auto;
+}
+.text19 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text19 div img{
+    width: 200px;
+    height: auto;
+}
+.text20 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text20 div img{
+    width: 200px;
+    height: auto;
+}
+.text21 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text21 div img{
+    width: 200px;
+    height: auto;
+}
+.text22 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text22 div img{
+    width: 200px;
+    height: auto;
+}
+.text23 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text23 div img{
+    width: 200px;
+    height: auto;
+}
+.text24 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text24 div img{
+    width: 200px;
+    height: auto;
+}
+.text24 {
+  width: 700px;
+  height: 250px;
+  margin: 0 auto; /* 横方向に中央寄せします。 */
+}
+.text24 div img{
+    width: 200px;
+    height: auto;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/style-sample.css">
+
+
+<!--    <script src="../static/main.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="../static/slick.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../static/slick-theme.css" media="screen" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/slick_min.js"></script>
+    <script type="text/javascript" src="../static/func_slick.js"></script>
+
+<!--    <script type="text/javascript" src="js/slick.min.js"></script>-->
+<!--    <SCRIPT language="JavaScript">-->
+<!--    &lt;!&ndash;-->
+<!--    img0=new Image()-->
+<!--    img0.src="images/red.gif"-->
+<!--    img1=new Image()-->
+<!--    img1.src="images/orange.gif"-->
+<!--    img2=new Image()-->
+<!--    img2.src="images/green.gif"-->
+<!--    img3=new Image()-->
+<!--    img3.src="images/blue.gif"-->
+<!--    img4=new Image()-->
+<!--    img4.src="images/glay.gif"-->
+
+<!--    function imgChange(parts){-->
+<!--    fname=parts.options[parts.selectedIndex].value;-->
+<!--    if(fname==0){document.imgsmp.src=img0.src;}-->
+<!--    if(fname==1){document.imgsmp.src=img1.src;}-->
+<!--    if(fname==2){document.imgsmp.src=img2.src;}-->
+<!--    if(fname==3){document.imgsmp.src=img3.src;}-->
+<!--    if(fname==4){document.imgsmp.src=img4.src;}-->
+<!--    }-->
+<!--    // &ndash;&gt;-->
+<!--</SCRIPT>-->
+</head>
+<body>
+
+
+<header>
+</header>
+<br>
+<form>
+
+      <ul class="selectradio">
+        <li class="selectradio-item">
+          <input type="radio" name="radiogroup2" onchange="slideshow_timer()" id="0" value="1" checked="">
+          <label for="0" class="selectradio-label">かわいい
+          <img src="../static/可愛い.jpg/" class="sample"></label>
+        </li>
+        <li class="selectradio-item">
+          <input type="radio" name="radiogroup2" onchange="func1()" id="1" value="2">
+          <label for="1" class="selectradio-label">エレガント
+          <img src="../static/可愛い.jpg/" class="sample"></label>
+        </li>
+<!--        <li class="selectradio-item">-->
+<!--          <input type="radio" name="radiogroup2" onchange="func2()" id="2" value="3">-->
+<!--          <label for="2" class="selectradio-label">筆文字-->
+<!--          <img src="../static/可愛い.jpg/" class="sample"></label>-->
+<!--        </li>-->
+      </ul>
+    <br>
+    <div><input type="submit" class="btn" value="submit"></div>
+<!--    </div>-->
+</form>
+
+<ul class="slider">
+     <li><a href="#"><img src="../static/可愛い.jpg"></a></li>
+     <li><a href="#"><img src="../static/create.jpg"></a></li>
+     <li><a href="#"><img src="../static/tile.jpg"></a></li>
+</ul>
+
+
+<br>
+<!--<img id="mypic" src="../static/可愛い.jpg/" width="400" height="300">-->
+
+<!--<FORM>-->
+<!--<P><IMG src="images/red.gif" width="180" height="120" name="imgsmp"></p>-->
+<!--<P><SELECT name="channel" size="1" onchange="imgChange(this)">-->
+<!--<OPTION value="0">レッド-->
+<!--<OPTION value="1">オレンジ-->
+<!--<OPTION value="2">グリーン-->
+<!--<OPTION value="3">ブルー-->
+<!--<OPTION value="4">グレー-->
+<!--</SELECT></P>-->
+<!--</FORM>-->
+<script>
+    $(function() {
+        $('.slider').slick();
+    });
+</script>
+<!--<script>-->
+<!--function func1() {-->
+<!--    <img src="../static/可愛い.jpg/" class="sample">-->
+<!--}-->
+<!--</script>-->
+
+
+<!--<script type="text/javascript">-->
+<!--function funcRed() {-->
+<!--    document.getElementById( "sample" ).style.backgroundColor = 'red';-->
+<!--}-->
+<!--function funcGreen() {-->
+<!--    document.getElementById( "sample" ).style.backgroundColor = 'green';-->
+<!--}-->
+<!--function funcBlue() {-->
+<!--    document.getElementById( "sample" ).style.backgroundColor = 'blue';-->
+<!--}-->
+<!--</script>-->
+
+<!--<div class="submit"><input id="submit_button" type="submit" name="submit" value="text"></div>-->
+
+</body>
+
+
+</html>

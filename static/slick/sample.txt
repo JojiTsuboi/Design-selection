@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>slickスライドショーのテスト</title>
+ 
+<link rel="stylesheet" type="text/css" href="slick.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="slick-theme.css" media="screen" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="slick.min.js"></script>
+ 
+<script type="text/javascript">
+$(function() {
+    $('.center-item').slick({
+          infinite: true,
+          dots:true,
+          slidesToShow: 1,
+          centerMode: true, 
+          centerPadding:'100px',
+          autoplay:false,
+          responsive: [{
+               breakpoint: 480,
+                    settings: {
+                         centerMode: false,
+               }
+          }]
+     });
+});
+</script>
+ 
+ 
+  </head>
+  <body>
+ 
+<div style="width:600px;">
+<ul class="center-item">
+     <li><img src="./images/hoge1.jpg"></li>
+     <li><img src="./images/hoge2.jpg"></li>
+     <li><img src="./images/hoge3.jpg"></li>
+     <li><img src="./images/hoge4.jpg"></li>
+</ul>
+</div>
+ 
+ 
+  </body>
+</html>
