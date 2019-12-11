@@ -1,5 +1,5 @@
 $(function() {
-  $('[name="que"]:radio').change( function() {
+  $('[name="que2"]:radio').change( function() {
     if($('[id=0]').prop('checked')){
       $('.text').fadeOut();
       $('.text01').fadeIn();

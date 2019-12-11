@@ -18,6 +18,7 @@ flag_img = [0 for k in range(265)]
 lst_select_2 = None
 clst_word_select_2 = None
 clst_img_select_2 = None
+page_count = 0
 x = 1
 
 def __init__(self):
@@ -61,26 +62,6 @@ def select_img_1(word, num, group_img, group_word, img): #ワードから近い�
         flag_img[i_save[k]] = 1
     return _save
 
-# def select_img_2(word, num, group_img, group_word, img): #ワードから近いイメージを3枚探索
-#     img_select_cnt = 5
-#     global flag_word
-#     global flag_img
-#     i_save = [0 for k in range(5)]
-#     _save = [0 for k in range(5)]
-#
-#     for k in range(img_select_cnt):
-#         l_min = 1.0*10**33
-#         for i in range(0,265):
-#             if (group_img[i] == group_word[num]):
-#                 if (flag_img[i] == 0):
-#                     _len = Dist(img[i][:], word[num])
-# #                    print(i+1 ,_len)
-#                     if (_len <= l_min):
-#                         l_min = _len
-#                         i_save[k] = i
-#                         _save[k] = i+1
-#         flag_img[i_save[k]] = 1
-#     return _save
 
 def select_word_1(word, group): #各クラスタにおいて原点から最も遠いワードを探索
     global flag_word
@@ -162,6 +143,15 @@ def index():
     global x
     x += 1
 
+    global  page_count
+    page_count += 1
+    print("count："+str(page_count))
+
+    if (page_count % 3 == 0):
+        global  flag_word
+        for i in range(25):
+            flag_word[i] = 0
+
     lst = pd.read_csv("data100.csv").values.tolist() #csv読み込み
     global lst_select_2
     lst_select_2 = lst
@@ -206,13 +196,7 @@ def index():
             if (clst_word[i] == 1 and flag_word[i] == 1):
                 flg1 += 1
             if (clst_word[i] == 2 and flag_word[i] == 1):
-                flg2 += 1    
-#         if (x == 2):
-# #            flag_word[0]=1
-# #            flag_word[7]=1
-# #            flag_word[10]=1
-#             i_select_1 = select_word_1(lst[0:25], clst_word)
-#             return render_template('index.html', type=int, img=i_select_1, len=25)
+                flg2 += 1
         i_select_1 = select_word_1(lst[0:25], clst_word)
         print("CLST_WORD -> " + str(clst_word))
         print("             " + "[0, 1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]")
@@ -268,10 +252,6 @@ def test2():
     favs2 = request.values.getlist("que2")
     print("SELECT_No. -> "+str(favs2))
     i_select_3 = select_img_1(lst_select_2[0:25], int(favs2[0]), clst_img, clst_word, lst_select_2[25:290])
-
-    # for i in range(25):
-    #     buff = select_img_2(lst_select_2[0:25], i, clst_img, clst_word, lst_select_2[25:290])
-    #     print(buff)
 
     print(i_select_3)
     return render_template('image.html', type=int, img=i_select_3, value=265)

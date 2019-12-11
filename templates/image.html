@@ -13,34 +13,35 @@
         {% for j in range(3) %}
             {% if (i <= 9) %}
                 {% if (img[j] == i) %}<!--可愛い-->
-                    <p>
+<!--                    <p>-->
                     <img src="/static/images/img01-00{{i}}.jpg" width="432" height="312">
-                    </p>
+<!--                    </p>-->
                 {% endif %}
             {% endif %}
             {% if (10 <= i <= 99) %}
                 {% if (img[j] == i) %}<!--可愛い-->
-                    <p>
+<!--                    <p>-->
                     <img src="/static/images/img01-0{{i}}.jpg" width="432" height="312">
-                    </p>
+<!--                    </p>-->
                 {% endif %}
             {% endif %}
             {% if (100 <= i <= 265) %}
                 {% if (img[j] == i) %}<!--可愛い-->
-                    <p>
+<!--                    <p>-->
                     <img src="/static/images/img01-{{i}}.jpg" width="432" height="312">
-                    </p>
+<!--                    </p>-->
                 {% endif %}
             {% endif %}
         {% endfor %}
     {% endfor %}
+
         
          
     <form action="/">
     <input type="SUBMIT" class="btn btn-info btn-lg" value="終了">
     </form>
 
-    <input type="button" value="ほかのサンプルを表示" onclick="window.location.reload();" />
+    <input type="button"  class="btn" value="ほかのサンプルを表示" onclick="window.location.reload();" />
     
     <script src="/static/js/main.js"></script>
 </body>
