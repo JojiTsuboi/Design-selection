@@ -2,21 +2,75 @@
 header {
   text-align: right;/*右寄せ*/
   padding: 10px;/*上下左右余白*/
-  background-image: url(../static/tile.jpg);
+  /*background-image: url(../static/tile.jpg);*/
   height: 300px;/*高さ*/
   background-size: cover;/*縦横比保持*/
   background-position: 50% 50%;
   margin-bottom: 0px;
 }
+
+.box {
+  position   : relative;
+  background-size : auto 100%;
+  height     : 300px;
+  margin     : auto;
+  overflow   : hidden;
+}
+
+ul {
+  padding: 0
+}
+
+/* --- 背景の指定 ------------------------------------------- */
+.box .bgImg {
+  background-size : cover;
+  position   : absolute;
+  top        : 0;
+  left       : 0;
+  bottom     : 0;
+  right      : 0;
+  opacity    : 0;
+  animation  : bgAnime 20s infinite;   /* 4画像 × 各5s = 20s */
+}
+
+/* --- 段差で背景画像のアニメーションを実行 ----------------- */
+.box .src1 {
+  background-image : url(../static/tile.jpg);   /* 背景の画像を指定 */
+}
+.box .src2 {
+  background-image : url(../static/back3.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 5s;
+}
+.box .src3 {
+  background-image : url(../static/back1.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 10s;
+}
+.box .src4 {
+  background-image : url(../static/back2.jpg);   /* 背景の画像を指定 */
+  animation-delay  : 15s;
+}
+
+
+@keyframes bgAnime {
+   0% { opacity: 0; }
+   5% { opacity: 1; }
+  25% { opacity: 1; }
+  30% { opacity: 0; }
+ 100% { opacity: 0; }
+}
+
+
 /*-----------------------------------------------------------*/
 .submit{
-    text-align: right;
+    text-align: center;
+    margin: 50px;
 }
 
 .btn {
+    margin: 10px;
 	position: relative;
-	width: 160px;
-	padding: 0.8em;
+	width: 200px;
+	padding: 1.2em;
 	text-decoration: none;
 	color: #1B1B1B;
 	background: #fff;
@@ -67,7 +121,8 @@ header {
 
 .selectradio {
     list-style: none;
-    text-align: left;
+    text-align: center;
+    padding: none
 }
 .selectradio .selectradio-item {
     margin-right: auto;
@@ -102,7 +157,8 @@ header {
 }
 .selectradio .selectradio-label {
   display: inline-block;
-  width: 100px;
+  width: 200px;
+  font-size: 30px;
 }
 .selectradio .sample {
     width: 100px;
@@ -110,9 +166,30 @@ header {
 }
 /*-----------------------------------------------------------*/
 
-.gazou {
-    margin-top: 50px;
+.text{
+    margin:2em 0;
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    margin-top: 10px
 }
+.text:before, .text:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;
+}
+.text:before {left: 10px;}
+.text:after {right: 10px;}
+.text p {
+    margin: 0; 
+    padding: 0;
+}
+
 
 .text {
   display: none;
@@ -122,7 +199,7 @@ header {
 .text01 {
   display: block;
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 /* スライダーで表示する画像のサイズを指定しています。 */
@@ -132,7 +209,7 @@ header {
 }
 .text02 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text02 div img{
@@ -141,7 +218,7 @@ header {
 }
 .text03 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text03 div img{
@@ -150,7 +227,7 @@ header {
 }
 .text04 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text04 div img{
@@ -159,7 +236,7 @@ header {
 }
 .text05 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text05 div img{
@@ -168,7 +245,7 @@ header {
 }
 .text06 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text06 div img{
@@ -177,7 +254,7 @@ header {
 }
 .text07 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text07 div img{
@@ -186,7 +263,7 @@ header {
 }
 .text08 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text08 div img{
@@ -195,7 +272,7 @@ header {
 }
 .text09 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text09 div img{
@@ -204,7 +281,7 @@ header {
 }
 .text10 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text10 div img{
@@ -213,7 +290,7 @@ header {
 }
 .text11 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text11 div img{
@@ -222,7 +299,7 @@ header {
 }
 .text12 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text12 div img{
@@ -231,7 +308,7 @@ header {
 }
 .text13 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text13 div img{
@@ -240,7 +317,7 @@ header {
 }
 .text14 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text14 div img{
@@ -249,7 +326,7 @@ header {
 }
 .text15 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text15 div img{
@@ -258,7 +335,7 @@ header {
 }
 .text16 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text16 div img{
@@ -267,7 +344,7 @@ header {
 }
 .text17 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text17 div img{
@@ -276,7 +353,7 @@ header {
 }
 .text18 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text18 div img{
@@ -285,7 +362,7 @@ header {
 }
 .text19 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text19 div img{
@@ -294,7 +371,7 @@ header {
 }
 .text20 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text20 div img{
@@ -303,7 +380,7 @@ header {
 }
 .text21 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text21 div img{
@@ -312,7 +389,7 @@ header {
 }
 .text22 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text22 div img{
@@ -321,7 +398,7 @@ header {
 }
 .text23 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text23 div img{
@@ -330,19 +407,19 @@ header {
 }
 .text24 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
 .text24 div img{
     width: 200px;
     height: auto;
 }
-.text24 {
+.text25 {
   width: 700px;
-  height: 250px;
+  height: 180px;
   margin: 0 auto; /* 横方向に中央寄せします。 */
 }
-.text24 div img{
+.text25 div img{
     width: 200px;
     height: auto;
 }
