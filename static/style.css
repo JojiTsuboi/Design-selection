@@ -38,15 +38,15 @@ ul {
   background-image : image-url(../static/tile.jpg);   /* 背景の画像を指定 */
 }
 .box .src2 {
-  background-image : url(../static/back3.jpg);   /* 背景の画像を指定 */
+  background-image : image-url(../static/back3.jpg);   /* 背景の画像を指定 */
   animation-delay  : 5s;
 }
 .box .src3 {
-  background-image : url(../static/back1.jpg);   /* 背景の画像を指定 */
+  background-image : image-url(../static/back1.jpg);   /* 背景の画像を指定 */
   animation-delay  : 10s;
 }
 .box .src4 {
-  background-image : url(../static/back2.jpg);   /* 背景の画像を指定 */
+  background-image : image-url(../static/back2.jpg);   /* 背景の画像を指定 */
   animation-delay  : 15s;
 }
 

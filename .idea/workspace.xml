@@ -16,8 +16,17 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/static/style.css">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="325">
-                    <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+                  <state relative-caret-position="68">
+                    <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://D:/ドキュメント/DesignSelect_final/templates/index.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="238">
+                    <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
                   </state>
                 </provider>
               </entry>
@@ -50,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="391">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -135,8 +144,8 @@
         <option value="$PROJECT_DIR$/static/sample2.js" />
         <option value="$PROJECT_DIR$/templates/image.html" />
         <option value="$PROJECT_DIR$/static/background.js" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/index2.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/static/style.css" />
       </list>
     </option>
@@ -246,13 +255,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="976" height="1056" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49671772" visible="true" weight="0.21215352" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49671772" visible="true" weight="0.21215352" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info x="1089" y="111" width="784" height="898" id="Run" order="3" type="WINDOWED" visible="true" weight="0.30490404" />
-      <window_info x="1037" y="262" width="958" height="1008" id="Terminal" order="4" sideWeight="0.50328225" side_tool="true" type="WINDOWED" visible="true" weight="0.18826869" />
+      <window_info active="true" x="1" y="16" width="958" height="1008" id="Terminal" order="4" sideWeight="0.50328225" side_tool="true" type="WINDOWED" visible="true" weight="0.18826869" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Python Console" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -394,9 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/ドキュメント/DesignSelect_final/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://D:/DesignSelect_final/templates/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -478,17 +483,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/ドキュメント/DesignSelect_final/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        <state relative-caret-position="68">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>
