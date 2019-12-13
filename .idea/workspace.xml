@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f171fb8e-cd73-4b76-8419-7307b6442ed9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/back1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/back2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/back3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/background.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/jquery.bgswitcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/kemuri.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index2.html" afterDir="false" />
-    </list>
+    <list default="true" id="f171fb8e-cd73-4b76-8419-7307b6442ed9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +16,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/static/style.css">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="597">
-                    <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+                  <state relative-caret-position="325">
+                    <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
                   </state>
                 </provider>
               </entry>
@@ -58,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -91,7 +80,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/image.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -257,12 +246,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="976" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49671772" visible="true" weight="0.21215352" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49671772" visible="true" weight="0.21215352" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info x="1089" y="111" width="784" height="898" id="Run" order="3" type="WINDOWED" visible="true" weight="0.30490404" />
-      <window_info active="true" x="961" y="31" width="958" height="1008" id="Terminal" order="4" sideWeight="0.50328225" side_tool="true" type="WINDOWED" visible="true" weight="0.18826869" />
+      <window_info x="1037" y="262" width="958" height="1008" id="Terminal" order="4" sideWeight="0.50328225" side_tool="true" type="WINDOWED" visible="true" weight="0.18826869" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Python Console" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
@@ -471,16 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -491,17 +471,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/image.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
