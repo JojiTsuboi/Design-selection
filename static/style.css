@@ -2,7 +2,7 @@
 header {
   text-align: right;/*右寄せ*/
   padding: 10px;/*上下左右余白*/
-  background-image: url(../static/tile.jpg);
+  /*background-image: url(../static/tile.jpg);
   height: 300px;/*高さ*/
   background-size: cover;/*縦横比保持*/
   background-position: 50% 50%;
@@ -21,6 +21,10 @@ ul {
   padding: 0
 }
 
+body {
+    margin: 0
+}
+
 /* --- 背景の指定 ------------------------------------------- */
 .box .bgImg {
   background-size : cover;
@@ -35,18 +39,18 @@ ul {
 
 /* --- 段差で背景画像のアニメーションを実行 ----------------- */
 .box .src1 {
-  background-image : image-url(../static/tile.jpg);   /* 背景の画像を指定 */
+  background-image : url(../static/tile.jpg);   /* 背景の画像を指定 */
 }
 .box .src2 {
-  background-image : image-url(../static/back3.jpg);   /* 背景の画像を指定 */
+  background-image : url(../static/back3.jpg);   /* 背景の画像を指定 */
   animation-delay  : 5s;
 }
 .box .src3 {
-  background-image : image-url(../static/back1.jpg);   /* 背景の画像を指定 */
+  background-image : url(../static/back1.jpg);   /* 背景の画像を指定 */
   animation-delay  : 10s;
 }
 .box .src4 {
-  background-image : image-url(../static/back2.jpg);   /* 背景の画像を指定 */
+  background-image : url(../static/back2.jpg);   /* 背景の画像を指定 */
   animation-delay  : 15s;
 }
 
