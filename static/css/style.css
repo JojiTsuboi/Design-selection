@@ -1,14 +1,14 @@
-/*-----------------------------------------------------------*/
+/* --- ヘッダーの指定 ------------------------------------------- */
 header {
   text-align: right;/*右寄せ*/
   padding: 10px;/*上下左右余白*/
-  /*background-image: url(../static/tile.jpg);
+  background-image: url(../back.jpg);
   height: 300px;/*高さ*/
   background-size: cover;/*縦横比保持*/
   background-position: 50% 50%;
   margin-bottom: 0px;
 }
-
+/* ---------------------------------------------- */
 .box {
   position   : relative;
   background-size : auto 100%;
@@ -34,23 +34,23 @@ body {
   bottom     : 0;
   right      : 0;
   opacity    : 0;
-  animation  : bgAnime 20s infinite;   /* 4画像 × 各5s = 20s */
+  animation  : bgAnime 20s infinite;
 }
 
 /* --- 段差で背景画像のアニメーションを実行 ----------------- */
 .box .src1 {
-  background-image : url(../static/tile.jpg);   /* 背景の画像を指定 */
+  background-image : url(../back_img/back.jpg);   /* 背景の画像を指定 */
 }
 .box .src2 {
-  background-image : url(../static/back3.jpg);   /* 背景の画像を指定 */
+  background-image : url(../back_img/back1.jpg);   /* 背景の画像を指定 */
   animation-delay  : 5s;
 }
 .box .src3 {
-  background-image : url(../static/back1.jpg);   /* 背景の画像を指定 */
+  background-image : url(../back_img/back2.jpg);   /* 背景の画像を指定 */
   animation-delay  : 10s;
 }
 .box .src4 {
-  background-image : url(../static/back2.jpg);   /* 背景の画像を指定 */
+  background-image : url(../back_img/back3.jpg);   /* 背景の画像を指定 */
   animation-delay  : 15s;
 }
 
@@ -62,9 +62,7 @@ body {
   30% { opacity: 0; }
  100% { opacity: 0; }
 }
-
-
-/*-----------------------------------------------------------*/
+/* --- 送信ボタンの指定 ------------------------------------------- */
 .submit{
     text-align: center;
     margin: 50px;
@@ -121,12 +119,11 @@ body {
             transform: scale(1.1);
   }
 }
-/*-----------------------------------------------------------*/
 
+/* --- ラジオボタンの指定 ------------------------------------------- */
 .selectradio {
     list-style: none;
     text-align: center;
-    padding: none
 }
 .selectradio .selectradio-item {
     margin-right: auto;
@@ -199,14 +196,14 @@ body {
   display: none;
 }
 
-/* スライダーのサイズと配置を指定しています。 */
+/* --- スライダーの指定 ------------------------------------------- */
 .text01 {
   display: block;
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; /* 横方向中央寄せ */
 }
-/* スライダーで表示する画像のサイズを指定しています。 */
+/* スライダー画像 */
 .text01 div img{
     width: 200px;
     height: auto;
@@ -214,7 +211,7 @@ body {
 .text02 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text02 div img{
     width: 200px;
@@ -223,7 +220,7 @@ body {
 .text03 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text03 div img{
     width: 200px;
@@ -232,7 +229,7 @@ body {
 .text04 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text04 div img{
     width: 200px;
@@ -241,7 +238,7 @@ body {
 .text05 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text05 div img{
     width: 200px;
@@ -250,7 +247,7 @@ body {
 .text06 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text06 div img{
     width: 200px;
@@ -259,7 +256,7 @@ body {
 .text07 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text07 div img{
     width: 200px;
@@ -268,7 +265,7 @@ body {
 .text08 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text08 div img{
     width: 200px;
@@ -277,7 +274,7 @@ body {
 .text09 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text09 div img{
     width: 200px;
@@ -286,7 +283,7 @@ body {
 .text10 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text10 div img{
     width: 200px;
@@ -295,7 +292,7 @@ body {
 .text11 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text11 div img{
     width: 200px;
@@ -304,7 +301,7 @@ body {
 .text12 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text12 div img{
     width: 200px;
@@ -313,7 +310,7 @@ body {
 .text13 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text13 div img{
     width: 200px;
@@ -322,7 +319,7 @@ body {
 .text14 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text14 div img{
     width: 200px;
@@ -331,7 +328,7 @@ body {
 .text15 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text15 div img{
     width: 200px;
@@ -340,7 +337,7 @@ body {
 .text16 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text16 div img{
     width: 200px;
@@ -349,7 +346,7 @@ body {
 .text17 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text17 div img{
     width: 200px;
@@ -358,7 +355,7 @@ body {
 .text18 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text18 div img{
     width: 200px;
@@ -367,7 +364,7 @@ body {
 .text19 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text19 div img{
     width: 200px;
@@ -376,7 +373,7 @@ body {
 .text20 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text20 div img{
     width: 200px;
@@ -385,7 +382,7 @@ body {
 .text21 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text21 div img{
     width: 200px;
@@ -394,7 +391,7 @@ body {
 .text22 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text22 div img{
     width: 200px;
@@ -403,7 +400,7 @@ body {
 .text23 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text23 div img{
     width: 200px;
@@ -412,7 +409,7 @@ body {
 .text24 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text24 div img{
     width: 200px;
@@ -421,7 +418,7 @@ body {
 .text25 {
   width: 700px;
   height: 180px;
-  margin: 0 auto; /* 横方向に中央寄せします。 */
+  margin: 0 auto; 
 }
 .text25 div img{
     width: 200px;

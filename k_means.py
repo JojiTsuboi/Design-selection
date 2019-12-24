@@ -71,7 +71,7 @@ class KMEANS:
             self.clusters[i] = np.argmin(dist)
         self.keep_flag=flag
 
-     # クラスタの代表点を更新
+    # クラスタの代表点を更新
     def RepUpdate(self, c_datas):
         for c_num in range(len(self.reps)):
             cluster_points=[]

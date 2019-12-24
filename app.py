@@ -41,7 +41,7 @@ def Middle(x1, x2): #2点間の中点を返す
     m = (x,y)
     return m
 
-def select_img_1(word, num, group_img, group_word, img): #ワードから近いイメージを3枚探索
+def select_img(word, num, group_img, group_word, img): #ワードから近いイメージを3枚探索
     img_select_cnt = 3
     global flag_word
     global flag_img
@@ -54,7 +54,6 @@ def select_img_1(word, num, group_img, group_word, img): #ワードから近い�
             if (group_img[i] == group_word[num]):
                 if (flag_img[i] == 0):
                     _len = Dist(img[i][:], word[num])
-#                    print(i+1 ,_len)
                     if (_len <= l_min):
                         l_min = _len
                         i_save[k] = i
@@ -251,14 +250,11 @@ def test2():
     clst_word = clst_word_select_2
     favs2 = request.values.getlist("que2")
     print("SELECT_No. -> "+str(favs2))
-    i_select_3 = select_img_1(lst_select_2[0:25], int(favs2[0]), clst_img, clst_word, lst_select_2[25:290])
+    i_select_3 = select_img(lst_select_2[0:25], int(favs2[0]), clst_img, clst_word, lst_select_2[25:290])
 
     print(i_select_3)
     return render_template('image.html', type=int, img=i_select_3, value=265)
 
-@app.route("/end")
-def end():
-    return "End"
 
 if __name__ == '__main__':
     app.run()
