@@ -4,7 +4,11 @@
 from numpy import *
 import numpy as np
 from matplotlib.font_manager import FontProperties
-from matplotlib.pyplot import figure, show
+# from matplotlib.pyplot import figure, show
+import seaborn as sns
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+
 import matplotlib.pyplot as plt
 import csv
 
@@ -107,68 +111,40 @@ c_score_x = zeros((1,1))
 c_score_y = zeros((1,1))
 c_score_z = zeros((1,1))
 
-s_score_x = array(x1[:,0])#u"--サンプルデザインX軸--"
-s_score_y = array(x1[:,1])#u"--サンプルデザインY軸--"
-s_score_z = array(x1[:,2])#u"--サンプルデザインz軸--"
-c_score_x = array(y2[:,0])#u"--感性ワードX軸--"
-c_score_y = array(y2[:,1])#u"--感性ワードY軸--"
-c_score_z = array(y2[:,2])#u"--感性ワードz軸--"
+s_score_x = np.array(x1[:,0])#u"--サンプルデザインX軸--"
+s_score_y = np.array(x1[:,1])#u"--サンプルデザインY軸--"
+s_score_z = np.array(x1[:,2])#u"--サンプルデザインz軸--"
+c_score_x = np.array(y2[:,0])#u"--感性ワードX軸--"
+c_score_y = np.array(y2[:,1])#u"--感性ワードY軸--"
+c_score_z = np.array(y2[:,2])#u"--感性ワードz軸--"
 
-sample_x = np.array(s_score_x)
-print("サンプルデザインx軸"+ sample_x)
+# 一次元配列へreshape
+X_s = s_score_x.reshape(1, s_score_x.shape[0])[0,:]
+Y_s = s_score_y.reshape(1, s_score_y.shape[0])[0,:]
+Z_s = s_score_z.reshape(1, s_score_z.shape[0])[0,:]
+X_c = c_score_x.reshape(1, c_score_x.shape[0])[0,:]
+Y_c = c_score_y.reshape(1, c_score_y.shape[0])[0,:]
+Z_c = c_score_z.reshape(1, c_score_z.shape[0])[0,:]
 
-#グラフ
-fig1=plt.figure(figsize=(30, 30))
+fig = plt.figure()
+ax = Axes3D(fig)
 
-#注記
-ax = fig1.add_subplot(111, autoscale_on=False, xlim=(-1,5), ylim=(-4,3))
-l, = plt.plot([], [], 'r-')
-
-#散布図のプロット
-fig1 = plt.scatter(s_score_x,s_score_y, marker='o', edgecolors = 'r', facecolor='None', s=40, alpha = 1, label = "Sample Score")
-fig1 = plt.scatter(c_score_x,c_score_y, marker='D', edgecolors = 'b', facecolor='None', s=40, alpha = 1, label = "Category Score")
+ax.set_xlabel("X")
+ax.set_ylabel("Y")
+ax.set_zlabel("Z")
 
 #MSゴシック
 fp = FontProperties(fname=r'C:\WINDOWS\Fonts\msgothic.ttc')
 
-#サンプルデザインのラベル付
-for n in range(0,size(s_score_x)):
-    SN[n]
-    ax.annotate(
-        slist[n],
-        xy=(s_score_x[n]-0.05, s_score_y[n]),
-        xytext = (s_score_x[n]-0.2, s_score_y[n]),
-        arrowprops=dict(
-            arrowstyle="-",
-            facecolor='black',
-        ),
-        horizontalalignment='right', verticalalignment='center',
-        fontproperties=fp
-    )
-#感性ワードのラベル付
-for n in range(0,size(c_score_x)):
-    ax.annotate(
-        hlist[n],
-        xy=(c_score_x[n]+0.05, c_score_y[n]),
-        xytext = (c_score_x[n]+0.2, c_score_y[n]),
-        arrowprops=dict(
-            arrowstyle="-",
-            facecolor='black',
-        ),
-        horizontalalignment='left', verticalalignment='center',
-        fontproperties=fp
-    )
+# 感性ワードの脚注
+for i in range(25):
+    ax.text(X_c[i], Y_c[i], Z_c[i], hlist[i], size=10, zorder=1, color='k', fontproperties = fp)
+# サンプルデザインの脚注
+for i in range(265):
+    ax.text(X_s[i], Y_s[i], Z_s[i], slist[i], size=10, zorder=1, color='k')
 
-#座標軸を表示
-plt.xlim(-4, 4)
-plt.ylim(-4, 4)
-plt.axhline()
-plt.axvline()
+ax.plot(X_s,Y_s,Z_s,marker="o",linestyle='None')
+ax.plot(X_c,Y_c,Z_c,marker="o",linestyle='None')
 
-#グラフ各種表示設定
-plt.grid(True)
-plt.legend(loc='best')
-plt.xlabel(u'成分1', fontproperties=fp)
-plt.ylabel(u'成分2', fontproperties=fp)
-plt.title(u'数量化Ⅲ類', fontproperties=fp)
 plt.show()
+
