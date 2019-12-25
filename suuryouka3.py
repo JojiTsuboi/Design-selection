@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import csv
 
 # タブ区切りデータ読み込み
-csvfile = open('data2.txt')#分析対象データファイル
+csvfile = open('data.txt')#分析対象データファイル
 dlist = []#データ2次元リスト
 slist = []#サンプル名称リスト
 tmp =  []
