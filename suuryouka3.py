@@ -140,8 +140,8 @@ fp = FontProperties(fname=r'C:\WINDOWS\Fonts\msgothic.ttc')
 for i in range(25):
     ax.text(X_c[i], Y_c[i], Z_c[i], hlist[i], size=10, zorder=1, color='k', fontproperties = fp)
 # サンプルデザインの脚注
-for i in range(265):
-    ax.text(X_s[i], Y_s[i], Z_s[i], slist[i], size=10, zorder=1, color='k')
+# for i in range(265):
+#     ax.text(X_s[i], Y_s[i], Z_s[i], slist[i], size=10, zorder=1, color='k')
 
 ax.plot(X_s,Y_s,Z_s,marker="o",linestyle='None')
 ax.plot(X_c,Y_c,Z_c,marker="o",linestyle='None')
